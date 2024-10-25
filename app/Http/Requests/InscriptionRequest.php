@@ -11,7 +11,7 @@ class InscriptionRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,11 @@ class InscriptionRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            "first_name" => "required|string",
+            "last_name" => "required|string",
+            "city" => "required|string",
+            "speciality" => "required|string|in:endecreno,diabetologie,autre",
+            "phone" => "required|string",
         ];
     }
 }

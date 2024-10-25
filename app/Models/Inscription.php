@@ -9,7 +9,6 @@ class Inscription extends Model
     protected $fillable = [
         'first_name',
         'last_name',
-        'country',
         'city',
         'speciality',
         'phone',

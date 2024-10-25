@@ -16,12 +16,7 @@ class InscriptionController extends Controller
 
     public function store(InscriptionRequest $request)
     {
-        $inscription = Inscription::create(
-            $request->validated()
-        );
-
-        return view('welcome', [
-            'inscription' => $inscription
-        ]);
+        Inscription::create($request->validated());
+        return redirect()->route('inscription.index')->with('success', 'Inscription effectuée avec succès');
     }
 }
