@@ -1,4 +1,5 @@
 <x-app-layout>
+
     <div class="container mx-auto md:py-10 py-5">
         <div class="flex flex-col md:flex-row gap-10 items-center min-h-screen justify-center px-4 ">
             
@@ -10,13 +11,6 @@
     
             <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 md:hover:rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200">
                 
-                @if (session('success'))
-                    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-                        {{ session('success') }}
-                    </div>
-                    
-                @endif
-
                 <form action="{{ route('inscription.store') }}" method="POST" class="space-y-5 ">
                     @csrf
     
@@ -73,14 +67,24 @@
         </div>
     </div>
 
+
+@if (session('success'))
     <script>
-        function toggleOtherSpecialityInput(select) {
-            const otherSpecialityContainer = document.getElementById('other-speciality-container');
-            if (select.value === 'autre') {
-                otherSpecialityContainer.classList.remove('hidden');
-            } else {
-                otherSpecialityContainer.classList.add('hidden');
-            }
-        }
+        document.addEventListener('DOMContentLoaded', function () {
+            Toastify({
+                text: "{{ session('success') }}",
+                duration: 5000,
+                close: true,
+                gravity: "top",
+                position: "center",
+                backgroundColor: "#4CAF50",
+                stopOnFocus: true,
+                style: {
+                    width: window.innerWidth < 640 ? "100%" : "400px", 
+                    textAlign: "center"
+                }
+            }).showToast();
+        });
     </script>
+@endif            
 </x-app-layout>
