@@ -1,14 +1,14 @@
 <x-app-layout>
-    <div class="container mx-auto py-10">
+    <div class="container mx-auto md:py-10 py-5">
         <div class="flex flex-col md:flex-row gap-10 items-center min-h-screen justify-center px-4 ">
             
             <div class="w-full md:w-1/2 flex justify-center">
                 <img src="{{ asset('images/affiche.jpeg') }}" 
                      alt="Affiche" 
-                     class="w-full md:w-3/4 h-auto object-cover rounded-lg shadow-lg hover:-rotate-2 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200" />
+                     class="w-full md:w-1/2 h-auto object-cover rounded-lg shadow-lg md:hover:-rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200" />
             </div>
     
-            <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 hover:rotate-2 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200">
+            <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 md:hover:rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200">
                 
                 @if (session('success'))
                     <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
