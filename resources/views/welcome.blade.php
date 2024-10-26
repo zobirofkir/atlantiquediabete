@@ -18,7 +18,7 @@
                     @csrf
     
                     <div class="flex flex-col gap-2">
-                        <label for="first_name" class="text-gray-700 font-semibold">Nome :</label>
+                        <label for="first_name" class="text-gray-700 font-semibold">Nom :</label>
                         <input type="text" name="first_name" id="first_name" 
                                class="w-full py-2 px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
@@ -36,7 +36,7 @@
                     </div>
     
                     <div class="flex flex-col gap-2">
-                        <label for="speciality" class="text-gray-700 font-semibold">Spécialisé :</label>
+                        <label for="speciality" class="text-gray-700 font-semibold">Spécialité  :</label>
                         <select name="speciality" id="speciality" 
                                 class="w-full py-2 px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                 onchange="toggleOtherSpecialityInput(this)">
@@ -62,7 +62,7 @@
                     <div class="flex flex-row gap-4 mt-4">
                         <button type="submit" 
                                 class="w-full md:w-1/2 py-3 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition ease-in-out duration-200 font-semibold">
-                            Inscription
+                                S’inscrire
                         </button>
 
                         <a href="{{ asset('assets/programme/pdf.pdf') }}" class="w-full text-center md:w-1/2 py-3 px-4 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition ease-in-out duration-200 font-semibold">
