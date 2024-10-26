@@ -40,9 +40,9 @@
                         <select name="speciality" id="speciality" 
                                 class="w-full py-2 px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                 onchange="toggleOtherSpecialityInput(this)">
-                            <option value="Endocrinologue">Endocrinologue</option>
-                            <option value="Diabétologue">Diabétologue</option>
-                            <option value="Nutritionniste">Nutritionniste</option>
+                            <option value="endocrinologue">Endocrinologue</option>
+                            <option value="diabétologie">Diabétologue</option>
+                            <option value="nutritionniste">Nutritionniste</option>
                             <option value="autre">Autre</option>
                         </select>
                     </div>
@@ -62,7 +62,7 @@
                     <div class="flex flex-row gap-4 mt-4">
                         <button type="submit" 
                                 class="w-full md:w-1/2 py-3 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition ease-in-out duration-200 font-semibold">
-                            Sauvegarder
+                            Inscription
                         </button>
 
                         <a href="{{ url('programme/pdf') }}" class="w-full text-center md:w-1/2 py-3 px-4 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition ease-in-out duration-200 font-semibold">
