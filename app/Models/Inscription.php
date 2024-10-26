@@ -12,5 +12,6 @@ class Inscription extends Model
         'city',
         'speciality',
         'phone',
+        'email',
     ];
 }

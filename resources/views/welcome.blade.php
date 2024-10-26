@@ -28,6 +28,12 @@
                         <input type="text" name="last_name" id="last_name" 
                                class="w-full py-2 px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label for="email" class="text-gray-700 font-semibold">Email :</label>
+                        <input type="text" name="email" id="email" 
+                               class="w-full py-2 px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                    </div>
     
                     <div class="flex flex-col gap-2">
                         <label for="city" class="text-gray-700 font-semibold">Ville :</label>

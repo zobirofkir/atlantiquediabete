@@ -27,6 +27,7 @@ class InscriptionRequest extends FormRequest
             "city" => "required|string",
             "speciality" => "required|string|in:endocrinologue,diabétologie,nutritionniste,autre",
             "phone" => "required|string",
+            "email" => "required|email",
         ];
     }
 }
