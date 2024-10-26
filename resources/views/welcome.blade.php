@@ -1,6 +1,6 @@
 <x-app-layout>
 
-    <div class="container mx-auto md:py-10 py-5">
+    <div class="container mx-auto md:py-10 py-10">
         <div class="flex flex-col md:flex-row gap-10 items-center min-h-screen justify-center px-4 ">
             
             <div class="w-full md:w-1/2 flex justify-center">
@@ -9,7 +9,7 @@
                      class="w-full md:w-1/2 h-auto object-cover rounded-lg shadow-lg md:hover:-rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200" />
             </div>
     
-            <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 md:hover:rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200">
+            <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 md:hover:rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200 mt-[40px]">
                 <h1 class="md:text-3xl text-2xl md:text-left text-center font-bold mb-5">Inscription</h1>
                 <p class="text-gray-700">
                     rendez-vous le samedi 16 novembre de 09h00 à 19h30 en direct sur la chaîne Youtube, la page Facebook de la Société marocaine de Diabétologie SMD.
