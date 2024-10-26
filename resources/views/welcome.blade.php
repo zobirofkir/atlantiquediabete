@@ -6,7 +6,7 @@
             <div class="w-full md:w-1/2 flex justify-center">
                 <img src="{{ asset('images/affiche.jpeg') }}" 
                      alt="Affiche" 
-                     class="w-full md:w-1/2 h-auto object-cover rounded-lg shadow-lg md:hover:-rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200" />
+                     class="w-full md:w-[420px] h-auto object-cover rounded-lg shadow-lg md:hover:-rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200" />
             </div>
     
             <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 md:hover:rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200">
