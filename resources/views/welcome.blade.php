@@ -12,7 +12,7 @@
             <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 md:hover:rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200">
                 <h1 class="md:text-3xl text-2xl md:text-left text-center font-bold mb-5">Inscription</h1>
                 <p class="text-gray-700 font-semibold">
-                    Rendez-vous le samedi 16 novembre de 09h00 à 19h30 en direct sur la chaîne Youtube, la page Facebook de la Société marocaine de Diabétologie SMD.
+                    Rendez-vous le Samedi 16 Novembre de 9 h à 13h00 sur la chaîne YouTube de la Société Marocaine de Diabétologie (SMD).
                 </p>
                 <form action="{{ route('inscription.store') }}" method="POST" class="space-y-5 ">
                     @csrf
@@ -46,10 +46,14 @@
                         <select name="speciality" id="speciality" 
                                 class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                 onchange="toggleOtherSpecialityInput(this)">
-                            <option value="endocrinologue">Endocrinologue</option>
-                            <option value="diabétologie">Diabétologue</option>
-                            <option value="nutritionniste">Nutritionniste</option>
-                            <option value="autre">Autre</option>
+                                <option value="Endocrinologue">Endocrinologue</option>
+                                <option value="Médecin généraliste">Médecin généraliste</option>
+                                <option value="Cardiologue">Cardiologue</option>
+                                <option value="Néphrologue">Néphrologue</option>
+                                <option value="Ophtalmologue">Ophtalmologue</option>
+                                <option value="Neurologue">Neurologue</option>
+                                <option value="Urologue">Urologue</option>
+                                <option value="autre">Autre</option>
                         </select>
                     </div>
                     
@@ -64,6 +68,24 @@
                         <input type="text" name="phone" id="phone" 
                                class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label for="in_person" class="text-gray-700 font-semibold">Est-ce que vous allez participer en présentiel ?</label>
+                        <select name="in_person" id="in_person" 
+                                class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option value="oui">Oui</option>
+                            <option value="non">Non</option>
+                        </select>
+                    </div>
+                    
+                    <div class="flex flex-col gap-2">
+                        <label for="certificate" class="text-gray-700 font-semibold">Est-ce que vous avez besoin d'une attestation de participation ?</label>
+                        <select name="certificate" id="certificate" 
+                                class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option value="oui">Oui</option>
+                            <option value="non">Non</option>
+                        </select>
+                    </div>                    
     
                     <div class="flex flex-row gap-4 mt-4">
                         <button type="submit" 

@@ -25,9 +25,11 @@ class InscriptionRequest extends FormRequest
             "first_name" => "required|string",
             "last_name" => "required|string",
             "city" => "required|string",
-            "speciality" => "required|string|in:endocrinologue,diabétologie,nutritionniste,autre",
+            "speciality" => "required|string|in:Endocrinologue,Médecin généraliste,Cardiologue,Néphrologue,Ophtalmologue,Neurologue,Urologue,autre",
             "phone" => "required|string",
             "email" => "required|email",
+            "in_person" => "required|string|in:oui,non", 
+            "certificate" => "required|string|in:oui,non",
         ];
     }
 }

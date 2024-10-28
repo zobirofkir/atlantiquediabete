@@ -13,5 +13,7 @@ class Inscription extends Model
         'speciality',
         'phone',
         'email',
+        'in_person',
+        'certificate',
     ];
 }

@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('speciality');
             $table->string('phone');
             $table->string('email');
+            $table->string('in_person');
+            $table->string('certificate');
             $table->timestamps();
         });
     }
