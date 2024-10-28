@@ -8,6 +8,7 @@ use Filament\Widgets\ChartWidget;
 class InscriptionChart extends ChartWidget
 {
     protected static ?string $heading = 'Inscriptions Chart';
+    protected int | string | array $columnSpan = 'full';
 
     protected function getData(): array
     {
