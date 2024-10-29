@@ -11,9 +11,25 @@
     
             <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 md:hover:rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200">
                 <h1 class="md:text-3xl text-2xl md:text-left text-center font-bold mb-5">Inscription</h1>
-                <p class="text-gray-700 font-semibold">
-                    Rendez-vous le Samedi 16 Novembre de 9 h à 13h00 sur la chaîne YouTube de la Société Marocaine de Diabétologie (SMD).
+                
+                <h3 class="text-gray-700 font-semibold">
+                    <strong>Chères/Chers collègues</strong>
+                </h3>
+
+                <p class="text-gray-700 font-semibold mt-2">
+                    Nous avons le plaisir de vous informer que la Société Marocaine de Diabétologie (SMD) organise un événement en ligne le samedi 16 novembre de 9h00 à 13h00 à l'occasion de la journée Mondiale de Diabète. 
+                    Cet événement se tiendra sur notre chaîne YouTube officielle.
+                    Cet événement sera une excellente occasion de partage de connaissances et d’expériences. Nous aurons l’opportunité d’écouter des présentations de divers experts et de participer à des discussions enrichissantes.
+                    Pour accéder à la diffusion, veuillez vous connecter à notre chaîne YouTube à l'horaire indiqué.
+
+                    Nous espérons que vous pourrez vous joindre à nous pour cet événement important.
                 </p>
+
+                <h3 class="text-gray-700 font-semibold mt-2">
+                    <strong>
+                        Cordialement Bureau de la SMD
+                    </strong>
+                </h3>
                 <form action="{{ route('inscription.store') }}" method="POST" class="space-y-5 ">
                     @csrf
     
