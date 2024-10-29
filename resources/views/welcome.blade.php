@@ -17,7 +17,7 @@
                 </h3>
  
                 <p class="text-gray-700 mt-2">
-                    Nous avons le plaisir de vous informer que la Société Marocaine de Diabétologie (SMD) organise un événement en ligne le Samedi 16 Novembre de 9h00 à 13h00 à l'occasion de la <strong>journée Mondiale de Diabète</strong>. 
+                    Nous avons le plaisir de vous informer que la Société Marocaine de Diabétologie (SMD) organise un événement en ligne le Samedi 16 Novembre de 9h00 à 13h00 à l'occasion de la <strong>Journée Mondiale de Diabète</strong>. 
                     Cet événement se tiendra sur notre chaîne YouTube officielle.
                     Cet événement sera une excellente occasion de partage de connaissances et d’expériences. Nous aurons l’opportunité d’écouter des présentations de divers experts et de participer à des discussions enrichissantes.
                     Pour accéder à la diffusion, veuillez vous connecter à notre chaîne YouTube à l'horaire indiqué.
@@ -66,8 +66,8 @@
                         <select name="speciality" id="speciality" 
                                 class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                 onchange="toggleOtherSpecialityInput(this)">
-                                <option value="Endocrinologue">Endocrinologue</option>
                                 <option value="Médecin généraliste">Médecin généraliste</option>
+                                <option value="Endocrinologue">Endocrinologue</option>
                                 <option value="Cardiologue">Cardiologue</option>
                                 <option value="Néphrologue">Néphrologue</option>
                                 <option value="Ophtalmologue">Ophtalmologue</option>
