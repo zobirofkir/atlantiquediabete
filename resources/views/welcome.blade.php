@@ -15,7 +15,7 @@
                 <h3 class="text-gray-700 font-semibold">
                     <strong>Chères/Chers collègues</strong>
                 </h3>
-
+ 
                 <p class="text-gray-700 font-semibold mt-2">
                     Nous avons le plaisir de vous informer que la Société Marocaine de Diabétologie (SMD) organise un événement en ligne le samedi 16 novembre de 9h00 à 13h00 à l'occasion de la journée Mondiale de Diabète. 
                     Cet événement se tiendra sur notre chaîne YouTube officielle.
