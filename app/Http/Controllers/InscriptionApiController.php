@@ -11,7 +11,7 @@ class InscriptionApiController extends Controller
     public function index()
     {
         return InscriptionResource::collection(
-            Inscription::all()
+            Inscription::Orderby('created_at', 'desc')->get()
         );
     }
 }
