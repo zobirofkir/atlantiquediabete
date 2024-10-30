@@ -25,7 +25,7 @@ class InscriptionRequest extends FormRequest
             "first_name" => "required|string",
             "last_name" => "required|string",
             "city" => "required|string",
-            "speciality" => "required|string|in:Endocrinologue,Médecin généraliste,Cardiologue,Néphrologue,Ophtalmologue,Neurologue,Urologue,autre",
+            "speciality" => "required|string|in:Endocrinologue,Médecin généraliste,Cardiologue,Néphrologue,Ophtalmologue,Neurologue,Urologue,Psychiatre,autre",
             "phone" => "required|string",
             "email" => "required|email",
             "in_person" => "required|string|in:oui,non", 
