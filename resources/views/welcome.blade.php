@@ -1,12 +1,16 @@
 <x-app-layout>
-
     <div class="container mx-auto md:py-10 py-5">
-        <div class="flex flex-col md:flex-row gap-10 items-center min-h-screen justify-center px-4 ">
-            
+        <div class="flex flex-col md:flex-row gap-10 items-center min-h-screen justify-center px-4">
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img src="{{ asset('images/affiche-one.jpeg') }}" 
+                     alt="Affiche" 
+                     class="w-full md:w-[400px] h-auto object-cover rounded-lg shadow-lg md:hover:-rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200" />
+            </div>
+
             <div class="w-full md:w-1/2 flex justify-center">
                 <img src="{{ asset('images/affiche.jpeg') }}" 
                      alt="Affiche" 
-                     class="w-full md:w-[400px]  h-auto object-cover rounded-lg shadow-lg md:hover:-rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200" />
+                     class="w-full md:w-[400px] h-auto object-cover rounded-lg shadow-lg md:hover:-rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200" />
             </div>
     
             <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 md:hover:rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200">
@@ -48,33 +52,31 @@
                     <div class="flex flex-row gap-4 mt-4">
                         <button type="submit" 
                                 class="w-full md:w-1/2 py-3 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition ease-in-out duration-200 font-semibold">
-                            Demand d'attestation
+                            Demande d'attestation
                         </button>
-                
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-
-@if (session('success'))
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            Toastify({
-                text: "{{ session('success') }}",
-                duration: 5000,
-                close: true,
-                gravity: "top",
-                position: "center",
-                backgroundColor: "#4CAF50",
-                stopOnFocus: true,
-                style: {
-                    width: window.innerWidth < 640 ? "100%" : "400px", 
-                    textAlign: "center"
-                }
-            }).showToast();
-        });
-    </script>
-@endif            
+    @if (session('success'))
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                Toastify({
+                    text: "{{ session('success') }}",
+                    duration: 5000,
+                    close: true,
+                    gravity: "top",
+                    position: "center",
+                    backgroundColor: "#4CAF50",
+                    stopOnFocus: true,
+                    style: {
+                        width: window.innerWidth < 640 ? "100%" : "400px",
+                        textAlign: "center"
+                    }
+                }).showToast();
+            });
+        </script>
+    @endif
 </x-app-layout>
