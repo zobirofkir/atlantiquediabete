@@ -14,7 +14,7 @@
             </div>
     
             <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 md:hover:rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200">
-                <h1 class="md:text-3xl text-2xl md:text-left text-center font-bold mb-5">Attestation</h1>
+                <h1 class="md:text-3xl text-2xl md:text-left text-center font-bold mb-5">Attestation de présence à la journée mondiale de diabète</h1>
                 
                 <form action="{{ route('attestation.store') }}" method="POST" class="space-y-5">
                     @csrf
