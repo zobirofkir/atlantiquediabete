@@ -31,7 +31,7 @@
                         Bureau de la SMD
                     </strong>
                 </h3>
-                <form action="{{ route('inscription.store') }}" method="POST" class="space-y-5">
+                <form action="{{ route('attestation.store') }}" method="POST" class="space-y-5">
                     @csrf
                 
                     <div class="flex flex-col gap-2">
@@ -53,7 +53,7 @@
                             <div class="text-red-500 text-sm">{{ $message }}</div>
                         @enderror
                     </div>
-                
+                                
                     <div class="flex flex-col gap-2">
                         <label for="email" class="text-gray-700 font-semibold">Email :</label>
                         <input type="text" name="email" id="email" 
@@ -63,78 +63,7 @@
                             <div class="text-red-500 text-sm">{{ $message }}</div>
                         @enderror
                     </div>
-                
-                    <div class="flex flex-col gap-2">
-                        <label for="city" class="text-gray-700 font-semibold">Ville :</label>
-                        <input type="text" name="city" id="city" 
-                               class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 @error('city') border-red-500 @enderror" 
-                               value="{{ old('city') }}" />
-                        @error('city')
-                            <div class="text-red-500 text-sm">{{ $message }}</div>
-                        @enderror
-                    </div>
-                
-                    <div class="flex flex-col gap-2">
-                        <label for="speciality" class="text-gray-700 font-semibold">Spécialité :</label>
-                        <select name="speciality" id="speciality" 
-                                class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 @error('speciality') border-red-500 @enderror" 
-                                onchange="toggleOtherSpecialityInput(this)">
-                            <option value="empty" selected></option>
-                            <option value="Cardiologue">Cardiologue</option>
-                            <option value="Endocrinologue">Endocrinologue</option>
-                            <option value="Médecin généraliste">Médecin généraliste</option>
-                            <option value="Néphrologue">Néphrologue</option>
-                            <option value="Neurologue">Neurologue</option>
-                            <option value="Ophtalmologue">Ophtalmologue</option>
-                            <option value="Psychiatre">Psychiatre</option>
-                            <option value="Urologue">Urologue</option>
-                            <option value="autre">Autre</option>
-                        </select>
-                        @error('speciality')
-                            <div class="text-red-500 text-sm">{{ $message }}</div>
-                        @enderror
-                    </div>
-                
-                    <div id="other-speciality-container" class="flex flex-col gap-2 hidden">
-                        <label for="other_speciality" class="text-gray-700 font-semibold">Autre Spécialité :</label>
-                        <input type="text" name="other_speciality" id="other_speciality" 
-                               class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-                    </div>
-                
-                    <div class="flex flex-col gap-2">
-                        <label for="phone" class="text-gray-700 font-semibold">Téléphone :</label>
-                        <input type="text" name="phone" id="phone" 
-                               class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 @error('phone') border-red-500 @enderror" 
-                               value="{{ old('phone') }}" />
-                        @error('phone')
-                            <div class="text-red-500 text-sm">{{ $message }}</div>
-                        @enderror
-                    </div>
-                
-                    <div class="flex flex-col gap-2">
-                        <label for="in_person" class="text-gray-700 font-semibold">Est-ce que vous allez participer en présentiel ?</label>
-                        <select name="in_person" id="in_person" 
-                                class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 @error('in_person') border-red-500 @enderror">
-                            <option value="oui">Oui</option>
-                            <option value="non">Non</option>
-                        </select>
-                        @error('in_person')
-                            <div class="text-red-500 text-sm">{{ $message }}</div>
-                        @enderror
-                    </div>
-                
-                    <div class="flex flex-col gap-2">
-                        <label for="certificate" class="text-gray-700 font-semibold">Est-ce que vous avez besoin d'une attestation de participation ?</label>
-                        <select name="certificate" id="certificate" 
-                                class="w-full py-[12px] px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 @error('certificate') border-red-500 @enderror">
-                            <option value="oui">Oui</option>
-                            <option value="non">Non</option>
-                        </select>
-                        @error('certificate')
-                            <div class="text-red-500 text-sm">{{ $message }}</div>
-                        @enderror
-                    </div>
-                
+                                
                     <div class="flex flex-row gap-4 mt-4">
                         <button type="submit" 
                                 class="w-full md:w-1/2 py-3 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition ease-in-out duration-200 font-semibold">

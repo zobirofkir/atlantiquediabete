@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AttestationApiController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InscriptionApiController;
 use Illuminate\Http\Request;
@@ -10,4 +11,5 @@ Route::post('/auth/login', [AuthController::class, 'login']);
 
 Route::middleware('auth:api')->group(function () {
     Route::apiResource("/inscriptions", InscriptionApiController::class);
+    Route::apiResource("/attestations", AttestationApiController::class);
 });
