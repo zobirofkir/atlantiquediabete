@@ -6,31 +6,12 @@
             <div class="w-full md:w-1/2 flex justify-center">
                 <img src="{{ asset('images/affiche.jpeg') }}" 
                      alt="Affiche" 
-                     class="w-full md:w-[633px]  h-auto object-cover rounded-lg shadow-lg md:hover:-rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200" />
+                     class="w-full md:w-[400px]  h-auto object-cover rounded-lg shadow-lg md:hover:-rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200" />
             </div>
     
             <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8 md:hover:rotate-3 rotate-0 hover:shadow-2xl hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-200">
-                <h1 class="md:text-3xl text-2xl md:text-left text-center font-bold mb-5">Inscription</h1>
+                <h1 class="md:text-3xl text-2xl md:text-left text-center font-bold mb-5">Attestation</h1>
                 
-                <h3 class="text-gray-700 font-semibold">
-                    <strong>Chères/Chers collègues</strong>
-                </h3>
- 
-                <p class="text-gray-700 mt-2">
-                    Nous avons le plaisir de vous informer que la Société Marocaine de Diabétologie (SMD) organise un événement à la Faculté de Médecine et de Pharmacie de Rabat, en présentiel et en virtuel, le Samedi 16 Novembre 2024, de 9h00 à 13h00, et ceci à l'occasion de la <strong>Journée Mondiale de Diabète</strong>. 
-                    Cet événement sera une excellente occasion de partage de connaissances et d’expériences autour du thème: "Bien être et diabète". Nous aurons l’opportunité  des présentations de divers experts et de participer à des discussions enrichissantes. Pour accéder à la diffusion, veuillez vous connecter à notre chaîne YouTube à l'horaire indiqué. 
-                    Nous espérons vous voir nombreux.
-                </p>
-
-                <h3 class="text-gray-700 font-semibold mt-2">
-                    <strong>
-                        Cordialement, 
-                    </strong>
-                    <br>
-                    <strong>
-                        Bureau de la SMD
-                    </strong>
-                </h3>
                 <form action="{{ route('attestation.store') }}" method="POST" class="space-y-5">
                     @csrf
                 
@@ -67,12 +48,9 @@
                     <div class="flex flex-row gap-4 mt-4">
                         <button type="submit" 
                                 class="w-full md:w-1/2 py-3 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition ease-in-out duration-200 font-semibold">
-                            S’inscrire
+                            Demand d'attestation
                         </button>
                 
-                        <a href="{{ asset('assets/programme/pdf.pdf') }}" class="w-full text-center md:w-1/2 py-3 px-4 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition ease-in-out duration-200 font-semibold">
-                            Programme
-                        </a>
                     </div>
                 </form>
             </div>
