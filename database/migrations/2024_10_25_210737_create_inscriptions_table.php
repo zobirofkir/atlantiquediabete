@@ -16,8 +16,10 @@ return new class extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('city');
-            $table->string('speciality');
+            $table->string('secteur');
             $table->string('phone');
+            $table->string('address');
+            $table->string('objectifs');
             $table->timestamps();
         });
     }

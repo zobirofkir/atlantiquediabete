@@ -25,8 +25,10 @@ class InscriptionRequest extends FormRequest
             "first_name" => "required|string",
             "last_name" => "required|string",
             "city" => "required|string",
-            "speciality" => "required|string|in:endecreno,diabetologie,autre",
+            "secteur" => "required|string|in:public,liberale,chu",
             "phone" => "required|string",
+            "address" => "required|string",
+            "objectifs" => "required|string",
         ];
     }
 }

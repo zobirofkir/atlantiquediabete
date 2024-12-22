@@ -10,7 +10,9 @@ class Inscription extends Model
         'first_name',
         'last_name',
         'city',
-        'speciality',
+        'secteur',
         'phone',
+        'address',
+        'objectifs',
     ];
 }
